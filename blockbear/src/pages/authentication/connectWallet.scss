@@ -1,10 +1,17 @@
+html, body {
+    margin: 0;
+}
+
 .connect-to-wallet-container {
+    background-color: rgba(49,49,47,255);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
     .connect-to-wallet-button {
         color: red;
-        background-color: red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
