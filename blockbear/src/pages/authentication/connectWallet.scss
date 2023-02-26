@@ -1,17 +1,42 @@
-html, body {
-    margin: 0;
-}
-
 .connect-to-wallet-container {
-    background-color: rgba(49,49,47,255);
+    background-color: rgba(49, 49, 47, 255);
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
+    .metamask-logo-container {
+        max-width: 250px;
+
+        .metamask-logo-image {
+            max-width: 100%;
+        }
+    }
 
     .connect-to-wallet-button {
-        color: red;
+        background: none;
+        border: 2px solid;
+        font: inherit;
+        line-height: 1;
+        padding: 25px 30px;
+        color: var(--metamask-button-orange-hover-color);
+        text-transform: uppercase;
+        transition: 0.3s;
+        letter-spacing: 4px;
+        overflow: hidden;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+
+    .connect-to-wallet-button:hover {
+        background: var(--metamask-button-orange-hover-color);
+        color: white;
+        transform: translateY(-0.25em);
+        box-shadow: 0 0 5px var(--metamask-button-orange-hover-color),
+            0 0 25px var(--metamask-button-orange-hover-color),
+            0 0 50px var(--metamask-button-orange-hover-color),
+            0 0 200px var(--metamask-button-orange-hover-color);
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
     }
 }
